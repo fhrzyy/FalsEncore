@@ -1,0 +1,433 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+img {
+    width: 10%; /* Menjadikan lebar gambar 100% dari elemen induknya */
+    max-width: 600px; /* Membatasi lebar maksimum gambar */
+    border-radius: 10px; /* Memberikan efek sudut membulat pada gambar */
+}
+
+
+
+
+/* Header & Navigation */
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #F9C06A;
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-links a {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.auth-links .login-link {
+    color: #fff;
+}
+
+.auth-links .signup-link {
+    background-color: #F9C06A;
+    color: #000;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('images/background.webp') no-repeat center center/cover;
+    display: block;
+    align-items: right;
+    justify-content: right;
+    color: #fff;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.order-now-btn {
+    background-color: #F9C06A;
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-btn:hover {
+    background-color: #F9C06A;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.biography {
+    max-width: 100%;
+}
+
+.biography h3 {
+    font-size: 2.5rem;
+    color: #5c3c00;
+    margin-bottom: 20px;
+}
+
+.biography p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.learn-more-btn {
+    background-color: #F9C06A;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #e0b300;
+}
+
+.biography-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Perbesar ukuran gambar di bagian "Biografi Iwan Fals" */
+.biography-image img {
+    width: 100%; /* Atur lebar gambar agar menyesuaikan lebar elemen induk */
+    max-width: 400px; /* Tentukan lebar maksimum gambar */
+    height: auto; /* Menjaga proporsi gambar secara otomatis */
+    border-radius: 10px; /* (Opsional) Tambahkan sudut melengkung pada gambar */
+    margin-top: 20px; /* (Opsional) Beri sedikit jarak ke atas */
+    transition: transform 0.3s ease; /* Efek transisi untuk animasi */
+}
+
+.biography-image img:hover {
+    transform: scale(1.1); /* Efek zoom saat gambar di-hover */
+}
+
+
+/* Songs Section */
+.songs-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+/* Perbesar ukuran gambar pada "Beberapa lagu karya Iwan Fals" */
+.songs-grid .song-item img {
+    width: 100%; /* Atur lebar gambar sesuai dengan lebar elemen induknya */
+    max-width: 250px; /* Maksimalkan lebar gambar */
+    height: auto; /* Otomatis menyesuaikan tinggi sesuai proporsi */
+    border-radius: 10px; /* Memberikan sudut melengkung pada gambar (opsional) */
+    transition: transform 0.3s ease; /* Tambahkan efek transisi */
+}
+
+.songs-grid .song-item img:hover {
+    transform: scale(1.1); /* Efek zoom saat hover */
+}
+
+
+.songs-section h3 {
+    font-size: 2.5rem;
+    color: #5c3c00;
+    margin-bottom: 40px;
+}
+
+.songs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.song-item {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.song-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.play-now-btn {
+    display: block;
+    background-color: #F9C06A;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.play-now-btn:hover {
+    background-color: #e0b300;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk bagian Login */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f5f5f5; /* Warna latar belakang */
+}
+
+.login-container {
+    background-color: #fff; /* Warna latar belakang form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-container .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #9c591b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container .login-btn:hover {
+    background-color: #e65c00; /* Warna tombol saat dihover */
+}
+
+.login-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* CSS untuk Daftar Tiket */
+.ListTiket {
+    width: 100%;
+    max-width: 1330px;
+    height: auto;
+    padding: 160px 76px 22px 78px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.Tiket {
+    width: 100%;
+    max-width: 1176px;
+    height: 282px;
+    background: #603809;
+    border-radius: 30px;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
+.Tiket .LeftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Tiket .LeftSection img {
+    width: 39px;
+    height: 24px;
+    border-radius: 1px;
+    border: 1px #B1BAC2 solid;
+}
+
+.Tiket .CenterSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.Tiket .CenterSection .EventTitle {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.Tiket .CenterSection .Artist {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.Tiket .RightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.Tiket .RightSection .TombolBuy {
+    width: 192px;
+    height: 56px;
+    background: black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Tiket .RightSection .Expired {
+    background: #747474;
+    opacity: 0.50;
+    cursor: not-allowed;
+}
+
+.Tiket .RightSection .Price {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Tiket .RightSection .Availability {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
